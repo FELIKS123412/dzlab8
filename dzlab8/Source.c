@@ -6,19 +6,17 @@
 int main()
 {
 	setlocale(LC_CTYPE, "RUS");
-	double x, s;
+	double x, s, t;
 	int f;
 	printf("Введите x:");
 	scanf("%lf", &x);
 	s = x;
+	t = x;
 	for (int i = 3; i <= 13; i += 2)
 	{
-		f = 1;
-		for (int j = 1; j <= i; j++)
-		{
-			f *= j;
-		}
-		s += pow(-1, (i - 1) / 2) * pow(x, i) / f;
+		t = -t * pow(x, 2) * 1 / ((i - 1) * i);
+		s += t;
+
 	}
 	
 	printf("Ответ: %.6lf", s);
