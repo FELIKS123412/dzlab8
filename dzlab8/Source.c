@@ -14,7 +14,7 @@ int main()
 	t = x;
 	for (int i = 3; i <= 13; i += 2)
 	{
-		t = -t * pow(x, 2) * 1 / ((i - 1) * i);
+		t = -t * x * x * 1 / ((i - 1) * i);
 		s += t;
 
 	}
