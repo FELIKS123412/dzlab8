@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 #include <math.h>
@@ -8,7 +8,7 @@ int main()
 	setlocale(LC_CTYPE, "RUS");
 	double x, s, t;
 	int f;
-	printf("Введите x:");
+	printf("Р’РІРµРґРёС‚Рµ x:");
 	scanf("%lf", &x);
 	s = x;
 	t = x;
@@ -19,7 +19,7 @@ int main()
 
 	}
 	
-	printf("Ответ: %.6lf", s);
+	printf("РћС‚РІРµС‚: %.6lf", s);
 
 
 }
